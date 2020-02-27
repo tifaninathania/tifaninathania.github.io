@@ -1,0 +1,157 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #CDF3FF;
+
+}
+nav {
+	width: 100%;
+	background: #F2E8FF;
+}
+ul {
+	width: 85%;
+	margin: 0 auto;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 30px;
+}
+ul li:hover {
+	background: #669;
+}
+ul li a {
+	color: #7E7AD3;
+	text-decoration: none;
+}
+.toggle {
+	width: 100%;
+	padding: 10px 20px;
+	background: #F2E8FF;
+	text-align: right;
+	box-sizing: border-box;
+	color: #7E7AD3;
+	font-size: 40px; 
+	display: none;
+}
+
+section.full {
+    width: 50%;
+    margin-left: 50pt;
+    margin-right:50pt;
+    background-color: #CDF3FF;
+
+}
+section .melayang {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  width: 50%;
+  height: 600px;
+  /*background-color: pink;*/
+}
+
+h1 {
+	font-size: 24pt;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #036;
+	
+}
+
+h2 {
+	font-size: 13pt;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+p {
+	font-size: 11pt;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	display: block;
+   
+}
+
+ol li:before {
+    font-family: sans-serif;
+    font-size: 11pt;
+    position: absolute;
+    margin-left: -2.5rem;
+}
+
+
+a:hover{
+	color: #036;
+}
+
+
+@media (max-width:768px) 
+{
+		.toggle
+		{
+			display: block;
+		}
+		ul 
+		{
+			width: 100%;
+			display: none;
+		}
+		ul li 
+		{
+			display: block;
+			text-align: center;
+		}
+		.active {
+			display: block;
+		}
+
+		section.full {
+   		padding: 0;
+   		width: 80%;
+    	margin-left: 50pt;
+    	margin-right:50pt;
+		}
+
+		section.spacing {
+		width: 85%;
+		height: 30%;
+		}
+
+		section .melayang {
+		    top: 100%;
+		    left: 10%;
+		    right: 10%;
+		    width: 70%;
+		 }
+
+		 h1 {
+		 	font-size: 25px;
+		 	font-family: Arial, Helvetica, sans-serif;
+		 }
+		 h2 {
+		 	font-size: 11pt;
+		 	font-family: Arial, Helvetica, sans-serif;
+		 }
+		 p {
+		 	font-size: 14px;
+		 	font-family: Tahoma, Geneva, sans-serif;
+		 	text-align: left;
+		 	display: block;
+		    
+		 }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

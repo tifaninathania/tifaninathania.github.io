@@ -1,42 +1,62 @@
 <!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-  </head>
-  <body>
-    <nav>
-      <main>
-      <a href="index.html" class="menu">Home</a>
-        <a href="about.html" class="menu">About</a>
-        <a href="contact.html" class="menu">Contact</a>
-        <div class="selalukananatas"></div>
-      </main>
-    </nav>
-    <section>
-    <section class="full-about">
-      <main>
-        <h1>About</h1>
-        <h2>MY RESUME</h2>
-          <h3>Name</h3>
-          <p>Tifani Nathania Sutanto</p>
-          <h3>Date and place of birth</h3>
-          <p>Malang, 7 December 2000</p>
-          <h3>Address</h3>
-          <p>U-Residence 1 Lippo Karawaci</p>
-          
-          <h2>EDUCATION</h2>
-          <h3>High School</h3>
-          <p>SMAK ST. Albertus, Malang</p>
-          <h3>Junior High School</h3>
-          <p>Charis National Academy</p>
-          
-          <h2>SKILLS</h2>
-          <h3>Photography</h3>
-          <h3>Adobe Illustrator</h3>
-          
-      </main>
-    </section>
-    <section></section>
-  </body>
-</html>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalanle=no" />
+		<title>Responsive Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/98cc96590a.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars Menu"></i>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="color.html">Color</a></li>				
+                <li><a href="mixingfonts.html">Mixing Fonts</a></li>
+                <li><a href="centeredtext.html">Centered Text</a></li>
+                <li><a href="columns.html">Columns</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>	
+		</nav>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){
+				$('.Menu').click(function(){
+					$('ul').toggleClass('active');
+				})
+			})	
+		</script>
+        
+	<section class="full">
+      	<main>
+        <h1>About the Author</h1>
+	          	<h2> Matthew Butterick</h2>
+	          	<p>is an American typographer, lawyer, writer, and computer programmer. He received the 2012 Golden Pen Award from the Legal Writing Institute for his book <i>Typography for Lawyers</i>, which started as a website in 2008 based on his experience as a practicing attorney.</p>
+	       		
+	       			<img src="matthewbutterick.jpg" alt="matthewbutterick" style="width: 300px; height: 270px; float: left; ">	
+
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		<br>
+	       		
+	       		<p> Click <a href="https://typographyforlawyers.com/">here</a> for more information on <i>Typography for Lawyers</i>. </p>
+
+	       		<p> Click <a href="https://www.amazon.com/Typography-Lawyers-2nd-Matthew-Butterick/dp/159839262X/">here</a> to purchase <i>Typography for Lawyers</i>.</p>
+	    </main>
+	</section>
+</body>

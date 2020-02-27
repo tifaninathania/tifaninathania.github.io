@@ -1,26 +1,45 @@
 <!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/global.css" />
-  </head>
-  <body>
-    <nav>
-      <main>
-        <a href="index.html" class="menu">Home</a>
-        <a href="about.html" class="menu">About</a>
-        <a href="contact.html" class="menu">Contact</a>
-        <div class="selalukananatas"></div>
-      </main>
-    </nav>
-    <section class="full">
-      <main>
-        <div class="melayang">
-          <h1>Tifani Nathania Sutanto</h1>
-          <h3>Hello! Welcome to my page</h3>
-        </div>
-      </main>
-    </section>
-    <section></section>
-  </body>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalanle=no" />
+		<title>Responsive Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/98cc96590a.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars Menu"></i>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="color.html">Color</a></li>				
+                <li><a href="mixingfonts.html">Mixing Fonts</a></li>
+                <li><a href="centeredtext.html">Centered Text</a></li>
+                <li><a href="columns.html">Columns</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>	
+		</nav>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){
+				$('.Menu').click(function(){
+					$('ul').toggleClass('active');
+				})
+			})	
+		</script>
+
+		<section class="full">
+	      <main>
+	        <div class="full">
+	        	<br>
+	        	<br>
+	          <h1>Typography is the visual component of the written word.</h1>
+	          <p> A text is a sequence of words. A text stays the same no matter how it’s rendered. Consider the sentence “I like pizza.” I can print that text on a piece of paper, or read it aloud, or save it in a file on my laptop. It’ll be the same text, just rendered different ways—visually, audibly, digitally. 
+	          But when “I like pizza” is printed, typography gets involved. All visually displayed text involves typography—whether it’s on paper, a computer screen, or a billboard. Is typography an art? That’s like asking if photography is an art. Some photographers and typographers use techniques that raise their work to the level of art. But at their core, both photography and typography have a utilitarian function. The aesthetic component is separate. Being an effective typographer is more about good skills than good taste. And you can learn the skills. </p>
+	        </div>
+	      </main>
+    	</section>
+
+	</body>
 </html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalanle=no" />
+		<title>Responsive Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://kit.fontawesome.com/98cc96590a.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav>
+			<div class="toggle">
+				<i class="fas fa-bars Menu"></i>
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="color.html">Color</a></li>				
+                <li><a href="mixingfonts.html">Mixing Fonts</a></li>
+                <li><a href="centeredtext.html">Centered Text</a></li>
+                <li><a href="columns.html">Columns</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>	
+		</nav>
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script type="text/javascript"> 
+			$(document).ready(function(){
+				$('.Menu').click(function(){
+					$('ul').toggleClass('active');
+				})
+			})	
+		</script>
+        <br>
+	<img src="cp.jpg" style="max-width: 100%; height: auto;">
+
+	<section class="full">
+      	<main>
+        <h1>Mixing Fonts</h1>
+        <p> <i> Less is more </i> </p>
+        <p> Enthusiasm for fonts often leads to enthusiasm for multiple fonts, and then the question: “How do I get better at <i>mixing fonts</i> in a document?”</p>
+		<p> Mixing fonts is like mixing patterned shirts and ties—there aren’t blackletter rules. Some people have a knack for it; some don’t. </p>
+		<p> Keep these principles in mind: </p>
+		
+		<ol>
+			<li>
+				<p> Mixing fonts is never a requirement—it’s an option. You can get plenty of mileage out of one font using variations based on <b> point size, bold or italic, small caps,</b> and so on. </p> 
+			</li>
+			
+			<li> 
+				<p> The rule of diminishing returns applies. Most documents can tolerate a second font. Few can tolerate a third. Almost none can tolerate four or more. (If you’re making a presentation, consider all your slides to be part of one document.) </p>
+			</li>
+
+				<p> See <b> bold or italic </b> for the difference between serif and sans serif fonts. </p>
+
+			<li>
+				<p> You can mix any two fonts that are identifiably different. If you’ve heard that you can only mix a serif font with a sans serif font, it’s not true. On the contrary, much like mixing colors, lower contrast between fonts can be more effective than higher contrast. </p> 
+			</li>
+
+				<p> For instance, you wouldn’t mix Palatino and Palatino Nova <b>(see palatino alternatives)</b> —the differences are too subtle. But I would consider mixing Lyon and Harriet, even though they’re both serif fonts. For inspiration, look at any American newspaper—typically, the <b>body text</b> and the headlines are both in serif fonts, but different ones. </p>
+		
+			<li>
+				<p> Font mixing is most successful when each font has a consistent role in the document. In a <b>research memo</b>, try one font for body text and one font for <b>headings</b>. Or in a motion, try one font for things in the center of the document (body text and headings) and one font for things at the edges (line numbers, footer, and other miscellany). </p>
+			</li>
+
+			<li>
+				<p> It rarely works to have multiple fonts in a single paragraph. Better to restrict yourself to one font per paragraph, and change fonts only at paragraph breaks. </p>
+			</li>
+		
+			<li>
+				<p> Though I’m typically reluctant to endorse rote methods, this one works reliably: combine fonts by the same font designer. For instance, <b>harriet</b> and <b>alright sans</b>, both designed by Jackson Cavanaugh, would mix well. For that matter, so would <b>concourse</b> and <b>equity</b>, both designed by me. </p>
+			</li>
+		</ol>
+		</main>
+	</section>
+	</body>
+</html>
