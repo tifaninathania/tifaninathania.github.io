@@ -1,143 +1,1798 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 22px;
+  	margin: 0;
+  	padding: 0;
 }
 
-nav {
-  position: fixed;
-  top: 10;
-  left: 0;
-  width: 100vw;
-  height: 45px;
-  background-color: #963;
-  z-index: 10;
+section.navbar {
+	width: 100%;
+	height: 10vh;
+	background-color: #000;
+	display: block;
 }
 
-main {
-  width: 1024px;
-  padding-top: 56px;
-  margin-left: auto;
-  margin-right: auto;
+
+a {
+	text-decoration: none;
 }
 
-nav main {
-  padding-top: 10px;
-  padding-left: 20px;
+.margin {
+	width: 85%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	display: block;
 }
 
-nav main a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Century Gothic', sans-serif;
-  padding-top: 10px;
-  padding-right: 15px;
+.logo {
+	width: 25%;
+	height: 100%;
+	background-color: transparent;
+	display: block;
+	float: left;
 }
 
-nav main a:hover {
-  text-decoration: underline;
-  color: coral;
+.logo p {
+	padding-top: 25px;
 }
 
-nav .selalukananatas {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background-color: peach;
-  border-radius: 15px;
+.grid {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	display: grid;
+	float: left;
+	grid-template-columns: auto auto auto auto;
+	grid-template-areas: 'home newcollection categories';
+	grid-template-rows: auto;
+	grid-column-gap: 5px;
 }
 
-section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.back {
+	background-color: transparent;
+  	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-section.full {
-  background-image: url('../image/bg.jpg');
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-section.full-about {
-  background-image: url('../image/bg-about.jpg');
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-}
-section.full-contact {
-  background-image: url('../image/bg-contact.jpg');
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
+
+
+.home {
+	grid-area: home;
 }
 
-section .left {
-  position: relative;
-  width: 40%;
-  height: 100%;
-  float: left;
+.home p:hover {
+	text-decoration: underline;
 }
 
-section .right {
-  position: relative;
-  width: 60%;
-  height: 100%;
-  float: left;
+
+
+.newcollection {
+	grid-area: newcollection;
 }
 
-section .melayang {
-  position: absolute;
-  top: 200px;
-  left: 100px;
-  width: 40%;
-  height: 200px;
-  /*background-color: purple;*/
-}
-/**/
-
-h1 {
-  font-size: 60px;
-  font-family: 'Century Gothic', sans-serif;
-  color: #FFF;
-  margin-bottom: 10px;
+.newcollection p:hover {
+	text-decoration: underline;
 }
 
-h2 {
-  font-size: 35px;
-  font-family: "Times New Roman", serif;
-  color: #666;
-  margin-bottom: 5px;
+
+
+.categories {
+	grid-area: categories;
 }
 
-h3 {
-  font-size: 20px;
-  font-family: 'Century Gothic', sans-serif;
-  color:#CCC;
+.categories p:hover {
+	text-decoration: underline;
 }
 
-p {
-  font-size: 20px;
-  font-family: "Times New Roman", serif;
-  color: #999;
-  margin-bottom: 13px;
+.dropdown {
+	width: 100%;
+	height: auto;
+	background-color: #E89395;
+	display: none
 }
 
-@media (max-width: 1024px) {
-  main {
-    width: 100vw;
-  }
-  
-  section .left, section .right {
-    width: 100%;
-    height: 60vh;
-  }
-  
-  section .melayang {
-    top: 80%;
-    left: 10%;
-    width: 90%;
-  }
+.dropdown p {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+
+.categories:hover .dropdown {
+	display: block;
+}
+
+.contact {
+	grid-area: contact;
+}
+
+.contact p:hover {
+	text-decoration: underline;
+}
+
+
+
+.login {
+	width: 5%;
+	height: 100%;
+	margin-left: 15%;
+	background-color: transparent;
+	display: block;
+	float: left;
+}
+
+.mycart {
+	width: 5%;
+	height: 100%;
+	background-color: transparent;
+	display: block;
+	float: left;
+}
+
+.login img {
+	width: 50%;
+	height: auto;
+	padding-top: 20px;
+	float: right;
+}
+
+.login img:hover {
+	width: 53%;
+}
+
+.mycart img {
+	width: 45%;
+	height: auto;
+	padding-top: 20px;
+	float: right;
+}
+
+.mycart img:hover {
+	width: 53%;
+}
+
+section.satu {
+	width: 100%;
+	height: 90vh;
+	background-image: url("../image/cover5-01.jpg");
+	background-size: cover;
+	background-position: top right;
+	display: block;
+}
+
+.head {
+	width: 50%;
+	padding-top: 130px;
+	padding-left: 30px;
+	background-color:transparent;
+	display: block;
+}
+
+.head p {
+	text-align: left;
+	color: #ECEAE8;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 2px grey;
+	font-size: 90px;
+}
+
+.sub {
+	width: 50%;
+}
+
+.sub h1 {
+	text-align: left;
+	color: #ECEAE8;
+	padding-left: 30px;
+	padding-top: 20px;
+	font-weight: 400;
+	line-height: 60px;
+	
+}
+
+.subtitle {
+	width: 55%;
+}
+
+.subtitle p {
+	text-align: left;
+	color: #ECEAE8;
+	padding-left: 30px;
+	letter-spacing: 3px;
+	padding-top: 50px;
+	
+}
+
+
+.shopnow {
+	width: 20%;
+	background-color: #ECEAE8;
+	margin: 30px;
+	display: block;
+}
+
+.shopnow p {
+	text-align: center;
+	color: #E89395;
+	padding: 15px;
+	letter-spacing: 3px;
+	text-decoration: underline;
+	
+}
+
+.shopnow p:hover {
+	background-color: black;
+}
+
+
+section.dua {
+	width: 100%;
+	height: 50vh;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image {
+	width: 40%;
+	height: 100%;
+	margin-left: 5%;
+	background-image: url("../image/skirt.jpeg");
+	background-size: cover;
+	display: block;
+	float: left;
+}
+
+.text {
+	width: 50%;
+	height: 100%;
+	background-color: transparent;
+	display: block;
+	float: left;
+}
+
+.text1 {
+	width: 65%;
+	margin-left: 40px;
+	margin-top: 80px;
+}
+
+.text1 h1{
+	color: black;
+	line-height: 50px;
+}
+.textisi {
+	width: 70%;
+	margin-left: 40px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.textisi p {
+	color: black;
+}
+
+.shopnow2 {
+	width: 25%;
+	margin: 20px 20px 20px 40px;
+	background-color: black;
+	display: block;
+}
+
+.shopnow2 p {
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+
+.shopnow2 p:hover {
+	background-color: #E89395;
+}
+
+
+section.tiga {
+	width: 100%;
+	height: 40vh;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E89395;
+	display: block;
+}
+
+.tiga1 {
+	width: 50%;
+	height: 10%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 3%;
+}
+
+.tiga1 h1 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.tiga2 {
+	width: 35%;
+	height: 40%;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.tiga2 p {
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+section.footer {
+	width: 100%;
+	height: 30vh;
+	margin-top: 70px;
+	background-color: #E89395;
+	display: block;
+}
+
+.gridfooter {
+	width: 85%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-areas: 'category store info about';
+	grid-template-rows: auto;
+	grid-gap: 90px;
+}
+
+.category {
+	grid-area: category;
+	padding-top: 30px;
+}
+
+.category h1 {
+	font-size: 18px;
+	padding-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.category p {
+	font-size: 15px;
+	padding-bottom: 8px;
+}
+
+.category p:hover {
+	text-decoration: underline;
+}
+
+
+
+.store {
+	grid-area: store;
+	padding-top: 30px;
+	
+}
+
+.store h1 {
+	font-size: 18px;
+	padding-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.store p {
+	font-size: 15px;
+	padding-bottom: 8px;
+}
+
+
+
+.info {
+	grid-area: info;
+	padding-top: 30px;
+}
+
+.info h1 {
+	font-size: 18px;
+	padding-bottom: 25px;
+	letter-spacing: 2px;
+}
+.info p2 {
+	font-size: 14px;
+	padding-bottom: 8px;
+	color:#FFF;
+	font-family: Verdana;
+	
+}
+.info p {
+	font-size: 15px;
+	padding-bottom: 8px;
+}
+.info p:hover {
+	text-decoration: underline;
+}
+
+
+
+.about {
+	grid-area: about;
+	padding-top: 30px;
+}
+
+.about h1 {
+	font-size: 18px;
+	padding-bottom: 25px;
+	letter-spacing: 2px;
+}
+.about p2 {
+	font-size: 14px;
+	padding-bottom: 8px;
+	color: #FFF;
+	font-family: Verdana;
+}
+.about p {
+	font-size: 15px;
+	padding-bottom: 8px;
+	line-height: 25px;
+}
+
+.about p:hover {
+	text-decoration: underline;
+}
+
+.email-input {
+	background-color: transparent;
+	border: none;
+	border-color: transparent;
+	border-bottom-color: currentcolor;
+	border-bottom-style: none;
+	border-bottom-width: medium;
+	border-bottom: 1px solid;
+	border-radius: 0;
+	margin: 0;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: 400;
+	height: 42.5px;
+	width: 180px;
+}
+
+
+section.footer1 {
+	width: 100%;
+	height: 7vh;
+	margin-top: 1px;
+	background-color: #E89395;
+	display: block;
+}
+
+.footer2 {
+	width: 85%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	display: block;
+}
+
+.reserved p {
+	font-size: 14px;
+	padding-top: 20px;
+	letter-spacing: 2px;
+}
+
+
+section.container {
+	width: 100%;
+	height: 250vh;
+	display: block;
+}
+
+.margin1 {
+	width: 85%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading {
+	width: 100%;
+	height: 10vh;
+	padding-top: 100px;
+}
+
+.heading h1 {
+	text-align: center;
+	color: black;
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-template-rows: 60vh 60vh 60vh;
+	grid-template-areas: 
+		'item1 item2 item3'
+		'item4 item5 item6'
+		'item7 item8 item9';
+	grid-gap: 2%;
+	padding: 30px 0 0 0px;
+}
+
+.item1 {
+	grid-area: item1;
+	background-color: aquamarine;
+	background-image: url("../image/item1.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item1:hover p {
+	display: block;
+}
+
+.item1 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+.item2 {
+	grid-area: item2;
+	background-color: aquamarine;
+	background-image: url("../image/item2.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item2:hover p {
+	display: block;
+}
+
+.item2 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+.item3 {
+	grid-area: item3;
+	background-color: aquamarine;
+	background-image: url("../image/item3.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item3:hover p {
+	display: block;
+}
+
+.item3 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item4 {
+	grid-area: item4;
+	background-color: aquamarine;
+	background-image: url("../image/item4.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item4:hover p {
+	display: block;
+}
+
+.item4 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item5 {
+	grid-area: item5;
+	background-color: aquamarine;
+	background-image: url("../image/item5.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item5:hover p {
+	display: block;
+}
+
+.item5 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item6 {
+	grid-area: item6;
+	background-color: aquamarine;
+	background-image: url("../image/item6.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item6:hover p {
+	display: block;
+}
+
+.item6 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item7 {
+	grid-area: item7;
+	background-color: aquamarine;
+	background-image: url("../image/item7.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item7:hover p {
+	display: block;
+}
+
+.item7 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item8 {
+	grid-area: item8;
+	background-color: aquamarine;
+	background-image: url("../image/item8.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item8:hover p {
+	display: block;
+}
+
+.item8 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.item9 {
+	grid-area: item9;
+	background-color: aquamarine;
+	background-image: url("../image/item9.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.item9:hover p {
+	display: block;
+}
+
+.item9 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+section.buy {
+	width: 100%;
+	height: 90vh;
+	margin-top: 50px;
+	display: none;
+}
+
+.leftimage1 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item1.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage2 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item2.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage3 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item3.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage4 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item4.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage5 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item5.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage6 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item6.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage7 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item7.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage8 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item8.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.leftimage9 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/item9.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.detail {
+	width: 45%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+
+.nama h1{
+	color: black;
+	font-size: 55px;
+	padding-top: 100px;
+}
+
+.kode p {
+	color: black;
+	font-size: 15px;
+	padding-top: 20px;
+}
+
+.harga p {
+	color: black;
+	font-size: 30px;
+	padding-top: 50px;
+}
+
+.qty {
+	width: 20%;
+	height: 5%;
+	margin-top: 30px;
+	display: block;
+
+}
+
+input {
+	height: 50%;
+}
+
+.qty p {
+	color: black;
+}
+
+.bag {
+	width: 80%;
+	height: 10%;
+	margin-top: 30px;
+	background-color: #E89395;
+}
+
+
+.bag:hover{
+	background-color: black;
+}
+
+.bag p {
+	text-align: center;
+	padding-top: 27px;
+	font-size: 15px;
+	color: white;
+}
+
+.balek {
+	position: relative;
+	width: 30%;
+	height: 7%;
+}
+
+.balek h1 {
+	color: black;
+	font-size: 20px;
+}
+
+
+
+
+.rok {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-template-rows: 60vh 60vh 60vh;
+	grid-template-areas: 
+		'rok1 rok2 rok3'
+		'rok4 rok5 rok6'
+		'rok7 rok8 rok9';
+	grid-gap: 2%;
+	padding: 30px 0 0 0px;
+}
+
+
+.rok1 {
+	grid-area: rok1;
+	background-color: aquamarine;
+	background-image: url("../image/rok1.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok1:hover p {
+	display: block;
+}
+
+.rok1 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.rok2 {
+	grid-area: rok2;
+	background-color: aquamarine;
+	background-image: url("../image/rok2.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok2:hover p {
+	display: block;
+}
+
+.rok2 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.rok3 {
+	grid-area: rok3;
+	background-color: aquamarine;
+	background-image: url("../image/rok3.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok3:hover p {
+	display: block;
+}
+
+.rok3 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok4 {
+	grid-area: rok4;
+	background-color: aquamarine;
+	background-image: url("../image/rok4.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok4:hover p {
+	display: block;
+}
+
+.rok4 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok5 {
+	grid-area: rok5;
+	background-color: aquamarine;
+	background-image: url("../image/rok5.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok5:hover p {
+	display: block;
+}
+
+.rok5 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok6 {
+	grid-area: rok6;
+	background-color: aquamarine;
+	background-image: url("../image/rok6.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok6:hover p {
+	display: block;
+}
+
+.rok6 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok7 {
+	grid-area: rok7;
+	background-color: aquamarine;
+	background-image: url("../image/rok7.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok7:hover p {
+	display: block;
+}
+
+.rok7 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok8 {
+	grid-area: rok8;
+	background-color: aquamarine;
+	background-image: url("../image/rok8.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok8:hover p {
+	display: block;
+}
+
+.rok8 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.rok9 {
+	grid-area: rok9;
+	background-color: aquamarine;
+	background-image: url("../image/rok9.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.rok9:hover p {
+	display: block;
+}
+
+.rok9 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+.rokimage1 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok1.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage2 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok2.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage3 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok3.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage4 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok4.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage5 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok5.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage6 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok6.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage7 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok7.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage8 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok8.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.rokimage9 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/rok9.jpg");
+	background-size: cover;
+	float: left;
+}
+
+
+
+.dress {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-template-rows: 60vh 60vh 60vh;
+	grid-template-areas: 
+		'dress1 dress2 dress3'
+		'dress4 dress5 dress6'
+		'dress7 dress8 dress9';
+	grid-gap: 2%;
+	padding: 30px 0 0 0px;
+}
+
+
+.dress1 {
+	grid-area: dress1;
+	background-color: aquamarine;
+	background-image: url("../image/dress1.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress1:hover p {
+	display: block;
+}
+
+.dress1 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.dress2 {
+	grid-area: dress2;
+	background-color: aquamarine;
+	background-image: url("../image/dress2.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress2:hover p {
+	display: block;
+}
+
+.dress2 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.dress3 {
+	grid-area: dress3;
+	background-color: aquamarine;
+	background-image: url("../image/dress3.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress3:hover p {
+	display: block;
+}
+
+.dress3 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress4 {
+	grid-area: dress4;
+	background-color: aquamarine;
+	background-image: url("../image/dress4.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress4:hover p {
+	display: block;
+}
+
+.dress4 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress5 {
+	grid-area: dress5;
+	background-color: aquamarine;
+	background-image: url("../image/dress5.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress5:hover p {
+	display: block;
+}
+
+.dress5 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress6 {
+	grid-area: dress6;
+	background-color: aquamarine;
+	background-image: url("../image/dress6.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress6:hover p {
+	display: block;
+}
+
+.dress6 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress7 {
+	grid-area: dress7;
+	background-color: aquamarine;
+	background-image: url("../image/dress7.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress7:hover p {
+	display: block;
+}
+
+.dress7 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress8 {
+	grid-area: dress8;
+	background-color: aquamarine;
+	background-image: url("../image/dress8.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress8:hover p {
+	display: block;
+}
+
+.dress8 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+
+.dress9 {
+	grid-area: dress9;
+	background-color: aquamarine;
+	background-image: url("../image/dress9.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+
+.dress9:hover p {
+	display: block;
+}
+
+.dress9 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+.dressimage1 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress1.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage2 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress2.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage3 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress3.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage4 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress4.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage5 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress5.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage6 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress6.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressmage7 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress7.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage8 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress.jpg");
+	background-size: cover;
+	float: left;
+}
+
+.dressimage9 {
+	width: 50%;
+	height: 100%;
+	background-image: url("../image/dress9.jpg");
+	background-size: cover;
+	float: left;
+}
+
+section.addtobag {
+	position: fixed;
+	width: 80%;
+	height: 80vh;
+	background-color: #E89395;
+	z-index: 100;
+	top: 10vh;
+	left: 10%;
+	display: none;
+}
+
+.thanks {
+	width: 70%;
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+
+.thanks p {
+	font-size: 100px;
+	text-align: center;
+}
+
+.shopagain {
+	width: 100%;
+	height: 20%;
+}
+
+.shopagain p {
+	text-align: center;
+	font-size: 30px;
+}
+
+
+section.cartdisplay {
+	position: fixed;
+	width: 50%;
+	height: 40vh;
+	background-color: rgba(232,147,149,0.9);
+	top: 10vh;
+	right: 0;
+	display: none;
+}
+
+.kata {
+	width: 90%;
+	height: 20%;
+	margin-left: auto;
+	margin: auto;
+}
+
+.kata0 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.kata0 p {
+	font-size: 25px;
+}
+
+.kata1 {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.kata1 p {
+	text-align: right;
+}
+
+.kata2 {
+	width: 90%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.barang {
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+
+.jumlah {
+	width: 10%;
+	height: 100%;
+	float: left;
+}
+
+.price {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.price p {
+	text-align: right;
+}
+
+section.empat {
+	width: 100%;
+	height: 80vh;
+	background-image: url("../image/illustration2.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #FFF;
+	margin-top: 5%;
+}
+
+.nc {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-template-rows: 60vh 60vh 60vh;
+	grid-template-areas: 
+		'nc1 nc2 nc3'
+		'nc4 nc5 nc6'
+		'nc7 nc8 nc9';
+	grid-gap: 2%;
+	padding: 30px 0 0 0px;
+}
+
+.nc1 {
+	grid-area: nc1;
+	background-color: aquamarine;
+	background-image: url("../image/item1.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc1:hover p {
+	display: block;
+}
+.nc1 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc2 {
+	grid-area: nc2;
+	background-color: aquamarine;
+	background-image: url("../image/rok2.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc2:hover p {
+	display: block;
+}
+.nc2 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc3 {
+	grid-area: nc3;
+	background-color: aquamarine;
+	background-image: url("../image/dress3.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc3:hover p {
+	display: block;
+}
+.nc3 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc4 {
+	grid-area: nc4;
+	background-color: aquamarine;
+	background-image: url("../image/item4.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc4:hover p {
+	display: block;
+}
+.nc4 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc5 {
+	grid-area: nc5;
+	background-color: aquamarine;
+	background-image: url("../image/rok5.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc5:hover p {
+	display: block;
+}
+.nc5 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc6 {
+	grid-area: nc6;
+	background-color: aquamarine;
+	background-image: url("../image/dress6.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc6:hover p {
+	display: block;
+}
+.nc6 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc7 {
+	grid-area: nc7;
+	background-color: aquamarine;
+	background-image: url("../image/item7.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc7:hover p {
+	display: block;
+}
+.nc7 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+.nc8 {
+	grid-area: nc8;
+	background-color: aquamarine;
+	background-image: url("../image/rok8.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc8:hover p {
+	display: block;
+}
+.nc8 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
+}
+
+
+
+.nc9 {
+	grid-area: nc9;
+	background-color: aquamarine;
+	background-image: url("../image/dress9.jpg");
+	background-size: cover;
+	padding-top: 100%;
+}
+.nc9:hover p {
+	display: block;
+}
+.nc9 p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: white;
+	background-color: rgba(76,76,76,0.29);
+	display: none;
 }

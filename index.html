@@ -1,45 +1,161 @@
 <!doctype html>
-<html> 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalanle=no" />
-		<title>Responsive Menu</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://kit.fontawesome.com/98cc96590a.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<nav>
-			<div class="toggle">
-				<i class="fas fa-bars Menu"></i>
+<html>
+<head>
+	<title>Belle Femme</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/typography.css" />
+</head>
+
+<body>
+	<section class="navbar">
+		<div class="margin">
+			<div class="logo">
+				<p>BELLE FEMME</p>
 			</div>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-                <li><a href="color.html">Color</a></li>				
-                <li><a href="mixingfonts.html">Mixing Fonts</a></li>
-                <li><a href="centeredtext.html">Centered Text</a></li>
-                <li><a href="columns.html">Columns</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>	
-		</nav>
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-		<script type="text/javascript"> 
-			$(document).ready(function(){
-				$('.Menu').click(function(){
-					$('ul').toggleClass('active');
-				})
-			})	
-		</script>
-
-		<section class="full">
-	      <main>
-	        <div class="full">
-	        	<br>
-	        	<br>
-	          <h1>Typography is the visual component of the written word.</h1>
-	          <p> A text is a sequence of words. A text stays the same no matter how it’s rendered. Consider the sentence “I like pizza.” I can print that text on a piece of paper, or read it aloud, or save it in a file on my laptop. It’ll be the same text, just rendered different ways—visually, audibly, digitally. 
-	          But when “I like pizza” is printed, typography gets involved. All visually displayed text involves typography—whether it’s on paper, a computer screen, or a billboard. Is typography an art? That’s like asking if photography is an art. Some photographers and typographers use techniques that raise their work to the level of art. But at their core, both photography and typography have a utilitarian function. The aesthetic component is separate. Being an effective typographer is more about good skills than good taste. And you can learn the skills. </p>
-	        </div>
-	      </main>
-    	</section>
-
-	</body>
+			<div class="grid">
+				<div class="back home">
+					<a href="index.html"><p>Home</p></a>
+				</div>
+				<div class="back newcollection">
+					<a href="new.html"><p>New Collection</p></a>
+				</div>
+				<div class="back categories">
+					<p>Categories</p>
+					<div class="dropdown">
+						<a href="categories.html"><p>Tops</p></a>
+						<a href="dresses.html"><p>Dresses</p></a>
+						<a href="skirts.html"><p>Skirts</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="login" onClick="opencart1('0')">
+				<img src="image/login.png" alt="login icon">
+			</div>
+			<div class="mycart" onClick="opencart('0')">
+				<img src="image/mycart.png" alt="mycart icon">
+			</div>
+		</div>
+	</section>
+	
+	<section class="satu">
+		<div class="head"><p>20% SALE</p></div>
+		<div class="sub"><h1>BE A CHERRY ON A PIE IN EVERY SITUATION</h1></div>
+		<div class="subtitle"><p>Experiment, mix, and showcase colors, textures, and style. Be yourself and impress others.</p></div>
+		<div class="shopnow"><a href="categories.html"><p>EXPLORE NOW</p></a></div>
+	</section>
+	<section class="dua">
+		<div class="image"></div>
+		<div class="text">
+			<div class="text1"><h1>FAVOURITE SKIRT</h1></div>
+			<div class="textisi"><p>Our new favourite skirt are defined by great all-over patterns and special details.</p></div>
+			<div class="shopnow2"><a href="skirts.html"><p>SHOP NOW</p></a></div>
+		</div>
+	</section>
+	
+	<section class="tiga">
+		<div class="tiga1">
+			<h1>ABOUT US</h1>
+		</div>
+		<div class="tiga2">
+			<p>Belle Femme is the place where everyone can is able to find some clothing called to highlight one’s individuality! We are waiting right for you!</p>
+		</div>
+	</section>
+	
+	<section class="empat">
+	</section>
+	<section id="dropp" class="cartdisplay">
+		<div class="kata">
+			<div class="kata0"><p>MY CART</p></div>
+			<div class="kata1" onClick="closee('0')"><p>Close</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>Eva Pleated Midi Dress</p></div>
+			<div class="jumlah"><p>3 pcs</p></div>
+			<div class="price"><p> Rp 599,000</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>Alona Colourblock Pleated Maxi Skirt</p></div>
+			<div class="jumlah"><p>1 pcs</p></div>
+			<div class="price"><p> Rp 459,000</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>Amia Satin Cowl Neck Top</p></div>
+			<div class="jumlah"><p>2 pcs</p></div>
+			<div class="price"><p> Rp 379,000</p></div>
+		</div>
+	</section>
+	
+	<section id="dropp2" class="cartdisplay">
+		<div class="kata">
+			<div class="kata0"><p>MY PROFILE</p></div>
+			<div class="kata1" onClick="closee2('0')"><p>Close</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>Tifani Nathania</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>tifaninathania@gmail.com</p></div>
+		</div>
+		<div class="kata2">
+			<div class="barang"><p>bellepay amount:</p></div>
+			<div class="price"><p> Rp 1,479,000</p></div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="gridfooter">
+			<div class="category">
+				<h1>CATEGORIES</h1>
+				<a href="categories.html"><p>Tops</p></a>
+				<a href="dresses.html"><p>Dresses</p></a>
+				<a href="skirts.html"><p>Skirts</p></a>
+			</div>
+			<div class="store">
+				<h1>WORKING HOUR</h1>
+				<p>Mon - Fri: 09.00am - 04.00pm</p> 
+				<p>Sat, Sun & Public Holiday: OFF</p>
+			</div>
+			<div class="info">
+				<h1>CONTACT US</h1>
+				<p2>Write to us: </p2>
+                <p>custcare@bellefemme.co.id</p>
+				<p2>For Partnership or Inquiry:</p2>
+                <p>partnership@bellefemme.co.id</p>
+			</div>
+			<div class="about">
+				<h1>FOR A DAILY DOSE OF HAPPINESS</h1>
+				<p2>Sign up for our newsletter and take 10% off your first order:</p2>
+    			<input type="your@email.com" class="email-input" placeholder="your@email.com">
+       		 	<input type="submit" class="email-submit" value="Subscribe">
+             </div> 
+		</div>
+	</section>
+	<section class="footer1">
+		<div class="footer2">
+			<div class="reserved"><p>2020 Belle Femme. All Rights Reserved</p></div>
+		</div>
+	</section>
+	
+	<script>
+		function opencart(x) {
+			document.getElementById('dropp').style.display = "block";
+		}
+		function opencart1(x) {
+			document.getElementById('dropp2').style.display = "block";
+		}
+		function closee(x) {
+			document.getElementById('dropp').style.display = "none"
+		}
+		function closee2(x) {
+			document.getElementById('dropp2').style.display = "none"
+		}
+	</script>
+</body>
 </html>
+
+
+
+
+
+
+
